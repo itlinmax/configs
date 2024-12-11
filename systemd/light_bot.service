@@ -1,0 +1,6 @@
+[Unit]
+Description=light bot sevise send message to telegram
+
+[Service]
+#Type=simple
+ExecStart=/home/ubuntu/python_env/bin/python3 /home/ubuntu/bin/light_bot.py

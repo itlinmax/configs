@@ -1,0 +1,6 @@
+[Unit]
+Description=recording electricity statistics
+
+[Service]
+#Type=simple
+ExecStart=/usr/bin/python3 /home/ubuntu/energy_statistic.py

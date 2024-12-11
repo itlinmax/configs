@@ -1,0 +1,11 @@
+[Unit]
+Description=recording electricity statistics
+After=network.target systemd-timesyncd.service
+
+[Timer]
+# run it on the first second (00) every minute.
+OnCalendar=*-*-* *:*:00
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
